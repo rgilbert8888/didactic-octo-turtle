@@ -6,11 +6,19 @@ html, body {
   width: 100%;
   height: 100%; }
 
+/*#0471BB*/
 body {
   margin: 0 auto;
   padding: 0;
   font-family: "myriad-pro", Helvetica, Arial, sans-serif;
   font-size: 14px; }
+
+.top-logo {
+  max-width: 100%; }
+  .top-logo img {
+    /*width: 100%;*/
+    max-width: 100%;
+    position: relative; }
 
 header {
   text-align: center;
@@ -23,11 +31,16 @@ ul {
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    text-decoration: underline; }
 
 nav ul ul.nav-sub {
   display: none;
   text-align: left; }
+  nav ul ul.nav-sub a {
+    text-decoration: none; }
 
 nav ul li:hover ul.nav-sub {
   display: block; }
@@ -47,19 +60,41 @@ nav ul ul.nav-sub li {
 
 ul.nav-sub {
   position: absolute;
-  padding: 0; }
+  padding: 0;
+  background-color: #930700; }
 
-div.col {
-  float: left;
-  background-color: pink; }
+nav {
+  background-color: #930700;
+  height: 30px;
+  padding: 6px; }
 
 .main {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
   justify-content: space-around; }
+  .main .col {
+    padding: 10px;
+    width: 300px;
+    /* min-height: 200px;*/
+    margin: 20px 0;
+    background-color: white;
+    text-align: center;
+    /*img {
+    	min-width: 100%;
+    	min-height: 100%;
+    }*/ }
 
+/*
+//sticky footer*/
 .page-wrap {
   min-height: 100%;
-  /* equal to footer height */
   margin-bottom: -142px;
   background-color: #eee; }
 
@@ -71,18 +106,29 @@ div.col {
   height: 142px; }
 
 .sticky-footer {
-  background-color: #930700; }
-  .sticky-footer a {
+  background-color: #930700;
+  color: white;
+  padding: 30px; }
+  .sticky-footer address {
     color: white; }
 
 .content {
-  margin: 0 5%;
-  background-color: #ccc; }
+  margin: 5%;
+  /*background-color: #ccc;*/ }
 
-.top-logo {
-  max-width: 100%; }
-  .top-logo img {
-    /*width: 100%;*/
-    max-width: 100%; }
+.is-mobile {
+  display: block;
+  text-align: left;
+  color: white; }
+
+nav ul.nav-main {
+  display: none; }
+
+@media (min-width: 420px) {
+  .is-mobile {
+    display: none; }
+
+  nav ul.nav-main {
+    display: inline-block; } }
 
 /*# sourceMappingURL=main.css.map */
