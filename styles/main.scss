@@ -9,11 +9,20 @@
 /* ELEMENT COLORS
 ================================ */
 
+/*YELLOW*/
+	/*	background-color: #EDBC00;*/
+/*BLACK*/
+	/*#353535*/
+/*RED*/
+	/*#930700*/
+
+
 /*header       { background-color: #384047; }*/
 /*.top-logo a       { background-color: #5fcf80; }*/
 /*.main   { background-color: #caebf6; }*/
 .aside { 
-	background-color: #bfe3d0; 
+	background-color: #353535; 
+	/*#4D84A2; */
 }
 footer, nav li { 
 	background-color: #930700; 
@@ -24,8 +33,15 @@ footer, nav li {
 	}
 }
 
+.banner {
+		background-color: #EDBC00;
+}
 
 
+.col{
+	background-color: #fff;
+
+}
 /*PAGE STYLES*/
 /*===========================*/
 * {
@@ -71,6 +87,7 @@ header{
 
 nav li {
 	margin-top: 15px;
+	border-radius: 5px;
 }
 
 .top-logo a, nav a {
@@ -87,8 +104,12 @@ footer {
 
 /* Column Layouts and Flex 
 ================================ */
-
-
+.main {
+	p {
+		font-size: 1.5em;
+		line-height: 150%;
+	}
+}
 
 .aside {
 	display: -webkit-flex;
@@ -97,17 +118,30 @@ footer {
 	align-items: stretch;
 	 -webkit-flex-direction: column;
 	flex-direction: column;
-	/**/   -webkit-justify-content: space-around;
-   justify-content: space-around;
+	/**/   -webkit-justify-content: center;
+   justify-content: center;
 
+	/*  -webkit-align-items: stretch;  Safari 
+  align-items:         stretch;*/
 
 	.col {
-		/*width: 100%;*/
-		background-color: pink;
-		img {
-			width: 60%;
-			margin: auto;
+		padding: 10px;
+		margin-bottom: 10px;
+		
+		h2{
+			text-align: center;
 		}
+		/*border: 1px solid;*/
+		a{
+			display: inline-block;
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+		}
+		img {
+			height: 150px;
+		}
+
 	}
 }
 
@@ -128,7 +162,6 @@ footer {
 }
 
 
-
 /* Media Queries
      *** USE MIN WIDTH INSTEAD OF MAX FOR MOBILE FIRST
 ================================ */
@@ -136,9 +169,6 @@ footer {
 
 /*@media 490 - fix nav bar
 */
-
-
-
 
 
 @media (min-width: 769px) {
@@ -161,7 +191,7 @@ footer {
 		width: 400px;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		border-radius: 5px;
+		
 	}
 
 	nav li {
@@ -183,7 +213,7 @@ footer {
 	}
 
 	.banner {                                   
-			background-color: #ebedde;
+		
 			text-align: center;
 			padding: 35px 15px;
 			display: block;

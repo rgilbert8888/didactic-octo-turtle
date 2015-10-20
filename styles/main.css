@@ -375,17 +375,30 @@ a {
 
 /* ELEMENT COLORS
 ================================ */
+/*YELLOW*/
+/*	background-color: #EDBC00;*/
+/*BLACK*/
+/*#353535*/
+/*RED*/
+/*#930700*/
 /*header       { background-color: #384047; }*/
 /*.top-logo a       { background-color: #5fcf80; }*/
 /*.main   { background-color: #caebf6; }*/
 .aside {
-  background-color: #bfe3d0; }
+  background-color: #353535;
+  /*#4D84A2; */ }
 
 footer, nav li {
   background-color: #930700;
   color: white; }
   footer a, nav li a {
     color: white; }
+
+.banner {
+  background-color: #EDBC00; }
+
+.col {
+  background-color: #fff; }
 
 /*PAGE STYLES*/
 /*===========================*/
@@ -421,7 +434,8 @@ header {
     width: 100%; }
 
 nav li {
-  margin-top: 15px; }
+  margin-top: 15px;
+  border-radius: 5px; }
 
 .top-logo a, nav a {
   padding: 10px 20px;
@@ -434,6 +448,10 @@ footer {
 
 /* Column Layouts and Flex 
 ================================ */
+.main p {
+  font-size: 1.5em;
+  line-height: 150%; }
+
 .aside {
   display: -webkit-flex;
   display: flex;
@@ -442,14 +460,23 @@ footer {
   -webkit-flex-direction: column;
   flex-direction: column;
   /**/
-  -webkit-justify-content: space-around;
-  justify-content: space-around; }
+  -webkit-justify-content: center;
+  justify-content: center;
+  	/*  -webkit-align-items: stretch;  Safari 
+    align-items:         stretch;*/ }
   .aside .col {
-    /*width: 100%;*/
-    background-color: pink; }
+    padding: 10px;
+    margin-bottom: 10px;
+    /*border: 1px solid;*/ }
+    .aside .col h2 {
+      text-align: center; }
+    .aside .col a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      text-align: center; }
     .aside .col img {
-      width: 60%;
-      margin: auto; }
+      height: 150px; }
 
 .side {
   padding: 20px; }
@@ -483,8 +510,7 @@ footer {
       margin-right: 30px;
       width: 400px;
       margin-top: 0px;
-      margin-bottom: 0px;
-      border-radius: 5px; }
+      margin-bottom: 0px; }
     header nav li {
       margin-right: 10px;
       white-space: nowrap; }
@@ -497,7 +523,6 @@ footer {
       vertical-align: middle; }
 
   .banner {
-    background-color: #ebedde;
     text-align: center;
     padding: 35px 15px;
     display: block; }
