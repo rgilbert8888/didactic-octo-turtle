@@ -4,43 +4,49 @@
 
 
 <div class="banner">
-	<h1>This is the Main Heading!</h1>
-	<p>Stuff and Things</p>
+	<h1>Your Heavy Equipment Parts Supplier!</h1>
+	<h2>Free Shipping Nationwide</h2>
 </div>
 <div class="content group">
 		<div class="main side">
-			<img class="main-img" src="http://www.monroetractor.com/images/mt_placeholder_construction.jpg" />
+			<img class="main-img" src="images/doosan-wl.png" />
+			<h3>Sub heading 1</h3>
 			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
 				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.</p>
+				facilisis luctus, metus.  <a href="#">More</a></p>
+			<h3>Sub heading 2</h3>
 			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
 				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.</p>
+				facilisis luctus, metus.  <a href="#">More</a></p>
+			<h3>Sub heading 3</h3>
 			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
 				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.</p>
+				facilisis luctus, metus. <a href="#">More</a></p>
 		</div>
 		<div class="aside side">
 			<div class="col">
-				<h2>Rollers</h2>
+				
 				<a href="rollers.html"><img src="images/Rollers/Roller_09.jpg"></a>
-				<div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+		<!-- 		<div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
 				Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, 
 				viverra non, semper suscipit, posuere a, pede.
-				</div>
+				</div> -->
+				<h2>Rollers<span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
 			</div>			
 			<div class="col">
-				<h2>Idlers</h2>
+			
 				<a href="idlers.html"><img src="images/Idlers/Idler_03.jpg"></a>
-				<div class="description">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+<!-- 				<div class="description">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
 				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.</div>
+				facilisis luctus, metus.</div> -->
+				<h2>Idlers <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
 			</div>			
 			<div class="col">
-				<h2>Loader Tires</h2>
+			
 				<a href="loader-tires.html"><img src="images/WheelLoaderTires/loadertire1.jpg"></a>
-				<div class="description">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, 
-				euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</div>
+	<!-- 			<div class="description">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, 
+				euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</div> -->
+				<h2>Loader Tires <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
 			</div>			
 <!-- 			<div class="col">
 				<h2>Track Shoes</h2>

@@ -16,32 +16,34 @@
 /*RED*/
 	/*#930700*/
 
-
-/*header       { background-color: #384047; }*/
-/*.top-logo a       { background-color: #5fcf80; }*/
-/*.main   { background-color: #caebf6; }*/
-.aside { 
-	background-color: #353535; 
+.side{ 
+	background-color: #ddd; 
 	/*#4D84A2; */
 }
-footer, nav li { 
+
+footer {
+	border-top: 3px solid #EDBC00;
+}
+footer, nav li{ 
 	background-color: #930700; 
 	color: white;
+	
 
 	a {
 		color: white;
 	}
 }
 
-.banner {
-		background-color: #EDBC00;
-}
 
+.banner {
+		background-color: #930700;
+		color: white;
+}
 
 .col{
 	background-color: #fff;
-
 }
+
 /*PAGE STYLES*/
 /*===========================*/
 * {
@@ -88,6 +90,7 @@ header{
 nav li {
 	margin-top: 15px;
 	border-radius: 5px;
+	border-bottom: 3px solid #EDBC00;
 }
 
 .top-logo a, nav a {
@@ -105,10 +108,21 @@ footer {
 /* Column Layouts and Flex 
 ================================ */
 .main {
+	color:  white;
+	background-color: #353535;
+	border-bottom: 3px solid #EDBC00;
+	border-top: 3px solid #EDBC00;
+
 	p {
-		font-size: 1.5em;
-		line-height: 150%;
+		margin-bottom: 15px;
+		line-height: 140%;
+		color: white;
+
 	}
+	h3{
+		color: #EDBC00;
+	}
+
 }
 
 .aside {
@@ -116,20 +130,37 @@ footer {
 	display: flex;
 	-webkit-align-items: stretch;
 	align-items: stretch;
-	 -webkit-flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-direction: column;
-	/**/   -webkit-justify-content: center;
-   justify-content: center;
-
-	/*  -webkit-align-items: stretch;  Safari 
-  align-items:         stretch;*/
+/*	-webkit-align-items: stretch;   
+  	align-items:stretch;*/
 
 	.col {
-		padding: 10px;
+		/*padding: 10px;*/
+		display: -webkit-flex;
+		display: flex;
+/*		-webkit-align-items: stretch;
+		align-items: stretch;*/
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+		border-radius: 5px;
 		margin-bottom: 10px;
+		min-height: 30%;
 		
 		h2{
 			text-align: center;
+			background-color: 	#353535;
+			color: white;
+			padding:10px 20px;
+			border-bottom-right-radius:5px;
+			border-bottom-left-radius:5px;
+
+			.arrow {
+				float: right;
+
+			}
 		}
 		/*border: 1px solid;*/
 		a{
@@ -191,12 +222,14 @@ footer {
 		width: 400px;
 		margin-top: 0px;
 		margin-bottom: 0px;
+
 		
 	}
 
 	nav li {
 		margin-right: 10px;
 		white-space: nowrap;
+
 	}
 
 	.top-logo a, nav a {
@@ -221,7 +254,7 @@ footer {
 
 
 	footer {
-		text-align: center;
+		text-align: left;
 		padding: 20px;
 	}
 
@@ -233,13 +266,16 @@ footer {
 		padding: 20px;
 		float: left;
 		width: 40%;
+
 	}
 
 	.main {
 		width: 60%;
+		border-bottom: none;
 	}
 	.side:last-child {
 		float: right;
+		border-top: 3px solid #EDBC00;
 	}
 
 

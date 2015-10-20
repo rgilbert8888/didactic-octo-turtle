@@ -381,12 +381,12 @@ a {
 /*#353535*/
 /*RED*/
 /*#930700*/
-/*header       { background-color: #384047; }*/
-/*.top-logo a       { background-color: #5fcf80; }*/
-/*.main   { background-color: #caebf6; }*/
-.aside {
-  background-color: #353535;
+.side {
+  background-color: #ddd;
   /*#4D84A2; */ }
+
+footer {
+  border-top: 3px solid #EDBC00; }
 
 footer, nav li {
   background-color: #930700;
@@ -395,7 +395,8 @@ footer, nav li {
     color: white; }
 
 .banner {
-  background-color: #EDBC00; }
+  background-color: #930700;
+  color: white; }
 
 .col {
   background-color: #fff; }
@@ -435,7 +436,8 @@ header {
 
 nav li {
   margin-top: 15px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border-bottom: 3px solid #EDBC00; }
 
 .top-logo a, nav a {
   padding: 10px 20px;
@@ -448,9 +450,17 @@ footer {
 
 /* Column Layouts and Flex 
 ================================ */
-.main p {
-  font-size: 1.5em;
-  line-height: 150%; }
+.main {
+  color: white;
+  background-color: #353535;
+  border-bottom: 3px solid #EDBC00;
+  border-top: 3px solid #EDBC00; }
+  .main p {
+    margin-bottom: 15px;
+    line-height: 140%;
+    color: white; }
+  .main h3 {
+    color: #EDBC00; }
 
 .aside {
   display: -webkit-flex;
@@ -459,17 +469,31 @@ footer {
   align-items: stretch;
   -webkit-flex-direction: column;
   flex-direction: column;
-  /**/
-  -webkit-justify-content: center;
-  justify-content: center;
-  	/*  -webkit-align-items: stretch;  Safari 
-    align-items:         stretch;*/ }
+  /*	-webkit-align-items: stretch;   
+    	align-items:stretch;*/ }
   .aside .col {
-    padding: 10px;
+    /*padding: 10px;*/
+    display: -webkit-flex;
+    display: flex;
+    /*		-webkit-align-items: stretch;
+    		align-items: stretch;*/
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    border-radius: 5px;
     margin-bottom: 10px;
+    min-height: 30%;
     /*border: 1px solid;*/ }
     .aside .col h2 {
-      text-align: center; }
+      text-align: center;
+      background-color: #353535;
+      color: white;
+      padding: 10px 20px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      .aside .col h2 .arrow {
+        float: right; }
     .aside .col a {
       display: inline-block;
       width: 100%;
@@ -528,7 +552,7 @@ footer {
     display: block; }
 
   footer {
-    text-align: center;
+    text-align: left;
     padding: 20px; }
 
   /* Column Layout
@@ -539,10 +563,12 @@ footer {
     width: 40%; }
 
   .main {
-    width: 60%; }
+    width: 60%;
+    border-bottom: none; }
 
   .side:last-child {
-    float: right; }
+    float: right;
+    border-top: 3px solid #EDBC00; }
 
   /* CLEARFIX */
   /*===============================*/
