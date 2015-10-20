@@ -109,21 +109,58 @@ footer {
 ================================ */
 .main {
 	color:  white;
-	background-color: #353535;
+	/*background-color: #353535;*/
 	border-bottom: 3px solid #EDBC00;
 	border-top: 3px solid #EDBC00;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(0,0,0,1.2);
 
-	p {
-		margin-bottom: 15px;
-		line-height: 140%;
-		color: white;
 
+	&:after{
+	    content: ' ';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 1;
+	    opacity: 0.4;
+	    background-image: url('../images/Construction.jpeg');
+	    background-repeat: no-repeat;
+	    background-position: 50% 0;
+	    -ms-background-size: cover;
+	    -o-background-size: cover;
+	    -moz-background-size: cover;
+	    -webkit-background-size: cover;
+	    background-size: cover;   
 	}
-	h3{
-		color: #EDBC00;
+
+	.article{
+		background-color: rgba(0,0,0,.5);
+		padding: 10px;
+		position: relative;
+		z-index: 3;
+		max-width: 100%;
+	
+		p {
+			margin-bottom: 15px;
+			line-height: 140%;
+			color: white;
+		}
+
+		h3{
+			color: #EDBC00;
+		}
 	}
 
+	img {
+		position: relative;
+		z-index: 3
+	}
 }
+
 
 .aside {
 	display: -webkit-flex;

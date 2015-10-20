@@ -10,18 +10,24 @@
 <div class="content group">
 		<div class="main side">
 			<img class="main-img" src="images/doosan-wl.png" />
-			<h3>Sub heading 1</h3>
-			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.  <a href="#">More</a></p>
-			<h3>Sub heading 2</h3>
-			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.  <a href="#">More</a></p>
-			<h3>Sub heading 3</h3>
-			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus. <a href="#">More</a></p>
+			<div class="article">
+				<h3>Sub heading 1</h3>
+				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus. <a href="#">More</a></p>
+			</div>
+			<div class="article">
+				<h3>Sub heading 2</h3>
+				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus. <a href="#">More</a></p>
+			</div>			
+			<div class="article">
+				<h3>Sub heading 3</h3>
+				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus. <a href="#">More</a></p>
+			</div>
 		</div>
 		<div class="aside side">
 			<div class="col">
