@@ -2,41 +2,30 @@
 /* RESET */ 
 /*==========================*/
 @import '_partials/_normalize';
+@import '_partials/_colors';
 
+/*COLOR STYLES*/
+/*===========================*/
 
-
-
-/* ELEMENT COLORS
-================================ */
-
-/*YELLOW*/
-	/*	background-color: #EDBC00;*/
-/*BLACK*/
-	/*#353535*/
-/*RED*/
-	/*#930700*/
 
 .side{ 
 	background-color: #ddd; 
-	/*#4D84A2; */
 }
 
 footer {
-	border-top: 3px solid #EDBC00;
+	border-top: 3px solid $mustard-yellow;
 }
 footer, nav li{ 
-	background-color: #930700; 
+	background-color: $dark-red; 
 	color: white;
-	
 
 	a {
 		color: white;
 	}
 }
 
-
 .banner {
-		background-color: #930700;
+		background-color: $dark-red;
 		color: white;
 }
 
@@ -259,8 +248,6 @@ footer {
 		width: 400px;
 		margin-top: 0px;
 		margin-bottom: 0px;
-
-		
 	}
 
 	nav li {

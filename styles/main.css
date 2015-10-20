@@ -373,17 +373,17 @@ ul {
 a {
   text-decoration: none; }
 
-/* ELEMENT COLORS
-================================ */
 /*YELLOW*/
 /*	background-color: #EDBC00;*/
 /*BLACK*/
 /*#353535*/
 /*RED*/
 /*#930700*/
+/*#4D84A2; */
+/*COLOR STYLES*/
+/*===========================*/
 .side {
-  background-color: #ddd;
-  /*#4D84A2; */ }
+  background-color: #ddd; }
 
 footer {
   border-top: 3px solid #EDBC00; }
