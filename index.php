@@ -31,36 +31,21 @@
 		</div>
 		<div class="aside side">
 			<div class="col">
-				
 				<a href="rollers.html"><img src="images/Rollers/Roller_09.jpg"></a>
-		<!-- 		<div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-				Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, 
-				viverra non, semper suscipit, posuere a, pede.
-				</div> -->
 				<h2>Rollers<span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
 			</div>			
 			<div class="col">
-			
 				<a href="idlers.html"><img src="images/Idlers/Idler_03.jpg"></a>
-<!-- 				<div class="description">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-				eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-				facilisis luctus, metus.</div> -->
 				<h2>Idlers <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
 			</div>			
 			<div class="col">
-			
 				<a href="loader-tires.html"><img src="images/WheelLoaderTires/loadertire1.jpg"></a>
-	<!-- 			<div class="description">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, 
-				euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</div> -->
 				<h2>Loader Tires <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
 			</div>			
-<!-- 			<div class="col">
-				<h2>Track Shoes</h2>
+			<div class="col">
 				<a href="track-shoes.html"><img src="images/TrackShoes/Shoe_07.jpg"></a>
-				<div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-				Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, 
-				posuere a, pede.</div>
-			</div> -->
+				<h2>Track Shoes <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h2>
+			</div>
 		</div>
 	</div>
 

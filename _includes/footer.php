@@ -6,5 +6,6 @@
 		  <p>732-766-2109</p>
 		</address>
 		<p>&copy; <?php echo date('Y'); ?></p>
+		<a href="#top">Back to Top</a>
 	</footer>
 </div>

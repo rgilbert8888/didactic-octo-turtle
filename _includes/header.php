@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 <body>
-<div class="page-wrap">
+<div class="page-wrap" id="#top">
 <!-- if going with floating layout, add group class to header -->
 	<header>
 		<div class="top-logo">
