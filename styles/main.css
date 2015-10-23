@@ -239,8 +239,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -421,7 +420,7 @@ html, body, .page-wrap {
 /* Header, Banner and Footer Layout
 ================================ */
 header {
-  padding: 15px;
+  /*	padding: 0 15px;*/
   width: 100%; }
 
 .top-logo {
@@ -432,8 +431,9 @@ header {
 
 nav li {
   margin-top: 15px;
+  margin: 5px;
   border-radius: 5px;
-  /*border-bottom: 3px solid #EDBC00;*/ }
+  display: none; }
 
 .top-logo a, nav a {
   padding: 10px 20px;
@@ -445,8 +445,21 @@ footer {
   padding: 20px;
   line-height: 1.3; }
 
+.mobile-menu {
+  background-color: #EDBC00;
+  color: white;
+  padding: 0 15px; }
+  .mobile-menu .is-mobile {
+    float: right;
+    margin: 6px 0;
+    font-size: 1.5em; }
+  .mobile-menu:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
 /* Column Layouts and Flex 
-================================ */
+================================ fix alpha later */
 .main {
   color: white;
   /*background-color: #353535;*/
@@ -498,13 +511,13 @@ footer {
   -webkit-flex-direction: column;
   flex-direction: column;
   /*	-webkit-align-items: stretch;   
-    	align-items:stretch;*/ }
+  	align-items:stretch;*/ }
   .aside .col {
     /*padding: 10px;*/
     display: -webkit-flex;
     display: flex;
     /*		-webkit-align-items: stretch;
-    		align-items: stretch;*/
+		align-items: stretch;*/
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: flex-end;
@@ -512,17 +525,14 @@ footer {
     /*		border-radius: 5px;*/
     margin-bottom: 5%;
     min-height: 30%;
-    max-height: 100%;
-    /*border: 1px solid;*/ }
+    max-height: 100%; }
     .aside .col:last-child {
       margin-bottom: 0px; }
     .aside .col h2 {
       text-align: center;
       background-color: #353535;
       color: white;
-      padding: 10px 20px;
-      /*			border-bottom-right-radius:5px;
-      			border-bottom-left-radius:5px;*/ }
+      padding: 10px 20px; }
       .aside .col h2 .arrow {
         float: right; }
     .aside .col a {
@@ -537,7 +547,9 @@ footer {
   padding: 3%; }
 
 .banner {
-  display: none; }
+  text-align: center;
+  padding: 35px 15px;
+  display: block; }
 
 /* Imagery Layout
 ================================ */
@@ -546,6 +558,45 @@ footer {
   /* <------   makes image fluid*/
   margin-bottom: 20px; }
 
+/* PRODUCTS PAGE */
+/*===============================*/
+.products {
+  /*width: 80%;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+  overflow: auto;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 3% 10%;
+  background-color: #353535;
+  border-top: 3px solid #EDBC00; }
+
+.category {
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  padding: 3%;
+  margin: 5px; }
+  .category img {
+    height: 100px; }
+
 /* Media Queries
      *** USE MIN WIDTH INSTEAD OF MAX FOR MOBILE FIRST
 ================================ */
@@ -553,7 +604,7 @@ footer {
 */
 @media (min-width: 769px) {
   /* Header, Banner and Footer Layout
-  ================================ */
+	================================ */
   header {
     display: table;
     min-height: 125px;
@@ -576,40 +627,60 @@ footer {
     header .top-logo, header nav {
       display: table-cell;
       vertical-align: middle; }
-
-  .banner {
-    text-align: center;
-    padding: 35px 15px;
-    display: block; }
-
+  .mobile-menu {
+    display: none; }
   footer {
     text-align: left;
     padding: 20px; }
-
   /* Column Layout
-  ================================ */
+	================================ */
   .side {
     /*padding: 20px;*/
     float: left;
     width: 40%; }
-
   .main {
     width: 60%;
     border-bottom: none; }
-
   .side:last-child {
     float: right;
     border-top: 3px solid #EDBC00; }
-
   /* CLEARFIX */
   /*===============================*/
   .group::after {
     content: " ";
     display: table;
     clear: both; }
-
   .content {
     display: -webkit-flex;
-    display: flex; } }
+    display: flex; }
+  .category {
+    width: 30%; } }
 
-/*# sourceMappingURL=main.css.map */
+.icon {
+  background: #EDBC00;
+  position: absolute;
+  margin-top: -4.3em;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 3.05em;
+  z-index: 300;
+  padding: 5.2px 5.2px 5.2px 5.2px;
+  padding: 0.325rem 0.325rem 0.325rem 0.325rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+  .icon span {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
