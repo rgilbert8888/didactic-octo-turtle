@@ -379,16 +379,16 @@ a {
   background-color: #ddd; }
 
 footer {
-  border-top: 3px solid #EDBC00; }
+  /*	border-top: 3px solid $mustard-yellow;*/ }
 
 footer, nav li {
-  background-color: #930700;
+  background-color: #353535;
   color: white; }
   footer a, nav li a {
     color: white; }
 
 .banner {
-  background-color: #930700;
+  background-color: #353535;
   color: white; }
 
 .col {
@@ -432,7 +432,6 @@ header {
 nav li {
   margin-top: 15px;
   margin: 5px;
-  border-radius: 5px;
   display: none; }
 
 .top-logo a, nav a {
@@ -446,7 +445,7 @@ footer {
   line-height: 1.3; }
 
 .mobile-menu {
-  background-color: #EDBC00;
+  background-color: #930700;
   color: white;
   padding: 0 15px; }
   .mobile-menu .is-mobile {
@@ -463,8 +462,8 @@ footer {
 .main {
   color: white;
   /*background-color: #353535;*/
-  border-bottom: 3px solid #EDBC00;
-  border-top: 3px solid #EDBC00;
+  /*	border-bottom: 3px solid $mustard-yellow;
+	border-top: 3px solid $mustard-yellow;*/
   position: relative;
   overflow: hidden;
   background-color: black;
@@ -584,7 +583,7 @@ footer {
   min-height: 100%;
   margin: 0 auto;
   padding: 3% 10%;
-  background-color: #353535;
+  /*	background-color: $grey-black;*/
   border-top: 3px solid #EDBC00; }
 
 .category {
@@ -605,16 +604,19 @@ footer {
 @media (min-width: 769px) {
   /* Header, Banner and Footer Layout
 	================================ */
+  body {
+    margin: 0 auto; }
   header {
     display: table;
     min-height: 125px;
-    padding: initial; }
+    padding: initial;
+    background-color: #fff; }
     header .top-logo, header nav, header nav li {
       display: inline-block;
       /*border-radius: 5px;*/ }
     header .top-logo img {
       margin-right: 30px;
-      width: 400px;
+      width: 225px;
       margin-top: 0px;
       margin-bottom: 0px; }
     header nav li {
@@ -629,6 +631,9 @@ footer {
       vertical-align: middle; }
   .mobile-menu {
     display: none; }
+  .banner {
+    border-top: 2px solid #930700;
+    /*border-bottom: 2px solid white;*/ }
   footer {
     text-align: left;
     padding: 20px; }
@@ -643,7 +648,7 @@ footer {
     border-bottom: none; }
   .side:last-child {
     float: right;
-    border-top: 3px solid #EDBC00; }
+    /*border-top: 3px solid $mustard-yellow;*/ }
   /* CLEARFIX */
   /*===============================*/
   .group::after {

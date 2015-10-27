@@ -13,10 +13,10 @@
 }
 
 footer {
-	border-top: 3px solid $mustard-yellow;
+/*	border-top: 3px solid $mustard-yellow;*/
 }
 footer, nav li{ 
-	background-color: $dark-red; 
+	background-color: $grey-black; 
 	color: white;
 
 	a {
@@ -25,7 +25,7 @@ footer, nav li{
 }
 
 .banner {
-		background-color: $dark-red;
+		background-color: $grey-black;
 		color: white;
 }
 
@@ -80,7 +80,7 @@ header{
 nav li {
 	margin-top: 15px;
 	margin: 5px;
-	border-radius: 5px;
+
 	display: none;
 }
 
@@ -99,7 +99,7 @@ footer {
 
 
 .mobile-menu {
-	background-color: $mustard-yellow;
+	background-color: $dark-red;
 	color: white;
 	padding: 0 15px;
 
@@ -121,13 +121,12 @@ footer {
 .main {
 	color:  white;
 	/*background-color: #353535;*/
-	border-bottom: 3px solid $mustard-yellow;
-	border-top: 3px solid $mustard-yellow;
+/*	border-bottom: 3px solid $mustard-yellow;
+	border-top: 3px solid $mustard-yellow;*/
 	position: relative;
 	overflow: hidden;
 	background-color: rgba(0,0,0,1);  
 	line-height: 1.5;
-
 
 	&:after{
 	    content: ' ';
@@ -277,7 +276,7 @@ footer {
 	min-height: 100%;
 	margin: 0 auto;
 	padding: 3% 10%;
-	background-color: $grey-black;
+/*	background-color: $grey-black;*/
 	border-top: 3px solid $mustard-yellow;
 }
 
@@ -320,19 +319,26 @@ footer {
 	/* Header, Banner and Footer Layout
 	================================ */
 
+	body{
+	
+		margin: 0 auto;
+		
+	}
+
 	header {
 		display: table;
 		min-height: 125px;
 		padding: initial;
-		
+		background-color: #fff;
 		.top-logo, nav, nav li {
 			display: inline-block;
 			/*border-radius: 5px;*/
 		}
 
+
 	.top-logo img{
 		margin-right: 30px;
-		width: 400px;
+		width: 225px;
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
@@ -360,6 +366,11 @@ footer {
 		display: none;
 	}
 
+	.banner {
+		border-top: 2px solid $dark-red;
+		/*border-bottom: 2px solid white;*/
+	}
+
 	footer {
 		text-align: left;
 		padding: 20px;
@@ -382,7 +393,7 @@ footer {
 	}
 	.side:last-child {
 		float: right;
-		border-top: 3px solid $mustard-yellow;
+		/*border-top: 3px solid $mustard-yellow;*/
 	}
 
 
