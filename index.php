@@ -5,7 +5,9 @@
 
 <div class="banner">
 	<h1>Your Heavy Equipment Parts Supplier!</h1>
-	<h2>Free Shipping Nationwide</h2>
+	<p>Aliquam erat volutpat. Nam dui mi, tincidunt quis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus.</p>
 </div>
 <div class="content group">
 		<div class="main side">

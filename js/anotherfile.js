@@ -1,1 +1,1 @@
-alert('another hi');
+// alert('another hi');

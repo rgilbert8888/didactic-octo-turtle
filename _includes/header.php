@@ -26,7 +26,7 @@
 					</ul> -->
 				</li>
 				<li>
-					<a href="_template.php">Item</a>
+					<a href="_template.php">Specials</a>
 					<!-- <ul class="nav-sub">
 						<li><a href="#">Skid Steer and Loader Tires</a></li>
 						<li><a href="#">Excavators</a></li>

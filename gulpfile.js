@@ -49,15 +49,15 @@ gulp.task("watchSass", function(){
 
 // run all building tasks in order of dependence  > gulp build
 
-gulp.task("build",['minifyScripts', 'compileSass']);  // dont need concatScripts
+// gulp.task("build",['minifyScripts', 'compileSass']);  // dont need concatScripts
 
 // then put all stuff in a folder called dist and preserve directory structure
 
-// gulp.task("build",['minifyScripts', 'compileSass'], function(){
-// 	return gulp.src(["styles/main.css", "js/app.min.js", "index.php", 
-// 					"images/**", "_includes/**", "equipment.json"], { base: './' })          // base preserves directory structure
-// 			.pipe(gulp.dest('dist'));
-// }); 
+gulp.task("build",['minifyScripts', 'compileSass'], function(){
+	return gulp.src(["styles/main.css", "js/app.min.js", "index.php", 
+					"images/**", "_includes/**", "equipment.json"], { base: './' })          // base preserves directory structure
+			.pipe(gulp.dest('dist'));
+}); 
 
 // make build the default task  > gulp
 
