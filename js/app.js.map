@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js","anotherfile.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;ACPA","file":"app.js","sourcesContent":["$(document).on('ready', function(){\n\n\t\t\t \n\t\t\t $('.is-mobile').on('click', function(){     \n\t\t\t  \t$('nav li').slideToggle();   \n\t\t\t \n\t\t\t  }); \n\t\t\t});","alert('another hi');"],"sourceRoot":"/source/"}

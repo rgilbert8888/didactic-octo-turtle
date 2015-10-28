@@ -17,27 +17,75 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		$(document).on('ready', function(){
-			$.get( "equipment.json", function( data ) {
-				 for (var i=0; i < data.length; i++) {
-				 	// console.log(data[i].name);
-				 	$('.products').append('<div class="category"><h2>' + data[i].name + '</h2><span class="'+ data[i].name+'">Get Info</span><p class="sub"></p><img class="photo" /></div>');
-				 		var name = data[i].name;
-				 		var items = data[i].items;
+			$.get( "equipment.json", function( data ) {// $.get( "equipment.json", function( data ) {
+			  for (var i = 0; i < data.length; i++) {
+			    // console.log(data[i].name);
+			    var name = data[i].name;
+			    var items = data[i].items;
+
+			    // $('.products').append('<div class="category"><h2>' + data[i].name + '</h2><span class="'+ data[i].name+'">Get Info</span><p class="sub"></p><img class="photo" /></div>');
+			    var category = $('<div/>', {
+			      class: 'category'
+			    });
+			    var name = $('<h2/>', {
+			      text: data[i].name
+			    });
+			    var getInfo = $('<span/>', {
+			      class: data[i].name,
+			      text: 'Get Info'
+			    });
+
+			    category.append(name);
+			    category.append(getInfo);
+
+			    for (var x = 0; x < items.length; x++) {
+			      //console.log(items[x]);
+			      var sub = $('<p/>', {
+			        class: 'sub',
+			        text: items[x].Description
+			      });
+			      var img = $('<img/>', {
+			        class: 'photo',
+			        src: items[x].Photo
+			      });
+			      category.append(sub);
+			      category.append(img);
+			    }
+
+			    $('.products').append(category);
+			  }
+			});
+		});
+
+
+
+
+
+
+
+
+
+
+			
+			// 	 for (var i=0; i < data.length; i++) {
+			// 	 	// console.log(data[i].name);
+			// 	 	$('.products').append('<div class="category"><h2>' + data[i].name + '</h2><span class="'+ data[i].name+'">Get Info</span><p class="sub"></p><img class="photo" /></div>');
+			// 	 		var name = data[i].name;
+			// 	 		var items = data[i].items;
 				 		
 
-					 		for (var x = 0; x < data[i].items.length; x++) { 
-							   console.log(data[i].items[x].Description, data[i].items[x].Photo);
-							}
-						}
+			// 		 		for (var x = 0; x < data[i].items.length; x++) { 
+			// 				   console.log(data[i].items[x].Description, data[i].items[x].Photo);
+			// 				}
+			// 			}
 
-						// for(var j = 0; j < items.length; j++) {
-	 				// 		$('.sub').html( items[j].Description );
-	 				// 		$('.photo').attr('src', items[j].Photo );
-	 				// 	}
+			// 			for(var j = 0; j < items.length; j++) {
+	 	// 					$('.sub').html( items[j].Description );
+	 	// 					$('.photo').attr('src', items[j].Photo );
+	 	// 				}
 		
-				}); 
-			});
-
+			// 	}); 
+		
 	</script>
 </body>
 </html>

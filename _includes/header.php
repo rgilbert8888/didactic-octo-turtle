@@ -10,9 +10,10 @@
 	<header>
 		<div class="top-logo">
 			<a href="index.php"><img src="images/phoenix_logo.jpeg" alt="pxlogo" /></a>
-		</div>		
+		</div>	
+		<div class="mobile-menu"><i class="fa fa-bars is-mobile"></i></div>	
 		<nav>
-	<!-- 		<div class="is-mobile js-menu">MENU</div> -->
+			
 			<ul class="nav-main">
 				<li><a href="_about.php">About</a></li>
 				<li>
