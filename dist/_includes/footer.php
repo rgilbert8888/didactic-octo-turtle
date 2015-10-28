@@ -7,3 +7,6 @@
 		<a href="#top">Back to Top</a>
 	</footer>
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script src="js/app.min.js"></script>

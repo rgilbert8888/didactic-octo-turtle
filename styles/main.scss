@@ -73,20 +73,20 @@ header{
 	margin-bottom: 0;
 	
 	img {
-		width: 100%;
+		width: 200px;
 	}
 }
 
 nav li {
 	margin-top: 15px;
 	margin: 5px;
-
+	text-align: center;
 	display: none;
 }
 
 .top-logo a, nav a {
 	padding: 10px 20px;
-	text-align: center;
+	/*text-align: center;*/
 	display: block;
 
 }
@@ -99,6 +99,7 @@ footer {
   
 
 .mobile-menu {
+
 	background-color: $dark-red;
 	color: white;
 	padding: 0 15px;
@@ -202,7 +203,7 @@ footer {
 			margin-bottom: 0px;
 		}
 		
-		h2{
+		h3{
 			text-align: center;
 			background-color: $grey-black;
 			color: white;
@@ -270,8 +271,8 @@ footer {
    flex-flow: row wrap;
    /* tweak the where items line up on the row */
    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-   -webkit-align-content: flex-end;
-   align-content: flex-end;
+/*   -webkit-align-content: flex-end;
+   align-content: flex-end;*/
 	overflow: auto;
 	min-height: 100%;
 	margin: 0 auto;
@@ -281,7 +282,7 @@ footer {
 }
 
 .category {
-	width: 100%;
+	width:  100%;
 	background-color:white;
 	border: 1px solid black;
 	text-align:  center;
@@ -419,7 +420,42 @@ footer {
 }
 
 
-.icon {
+/*
+About us Page*/
+/*==========================*/
+
+/*.slideshow {
+	width: 50%;
+}
+
+.about-us {
+	width: 50%;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.icon {
     background: $mustard-yellow;
     position: absolute;
     margin-top: -4.3em;
@@ -450,6 +486,6 @@ footer {
     padding: 0;
     border: 0;
     }
-}
+}*/
 
 

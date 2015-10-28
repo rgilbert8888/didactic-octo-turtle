@@ -1,20 +1,74 @@
 <?php include('_includes/header.php') ?>
 
 <!-- <!DOCTYPE html> -->
+<style type="text/css">
 
+.container {
+  /*max-width: 400px;*/
+  min-height: 250px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container img {
+  width: 100%;
+   height:auto;
+}
+</style>
 
 <div class="banner">
-	<h1>This is the Main Heading!</h1>
-	<p>Stuff and Things</p>
+	<h1>About Us</h1>
+	<p>More stuff here. explanation of the company. Aliquam erat volutpat. Nam dui mi, tincidunt quis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+		eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+		facilisis luctus, metus.</p>
 </div>
 <div class="content group">
-	
-</div>
+	<div class="slideshow main side">
 
+
+		<div class="container">
+    		<div style="display: inline-block;">
+     			 <img src="images/slideshow/Construction.jpeg"  />
+   			 </div>
+    		<div>
+   				<img src="images/slideshow/big_bulldozer.png" />
+   			</div>
+   			<div>
+     			<img src="images/slideshow/big_excavator.png"  />
+   			 </div>
+  		 </div>
+  		<button class="next">Next</button>
+		<button class="prev">Prev</button>
+  	</div>
+  	<div class="about-us side">
+  		<h2>History</h2>
+  		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
+  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+  		<h2>Mission</h2>
+  		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
+  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+  		<h2>Team</h2>
+	  		<ul>
+	  			<li>John Smith</li>
+	  			<li>Jane Doe</li>
+	  			<li>Homer Simpson</li>
+	  		</ul>
+  	</div>
+</div>
 <?php include('_includes/footer.php') ?>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).on('ready', function(){
 
@@ -22,7 +76,46 @@
 			//  $('.js-menu').on('click', function(){     
 			//   	$('nav ul').slideToggle();   
 			//   }); 
-			});
+
+			var currentIndex = 0,
+				items = $('.container div'),
+				itemsAmt = items.length;
+
+			function cycleSlides(){
+				var item = $('.container div').eq(currentIndex);
+				items.hide(); 
+				item.css('display', 'inline-block');
+			}
+
+			var autoSlide = setInterval(function(){
+				currentIndex += 1; 
+				if(currentIndex > itemsAmt - 1){
+					currentIndex = 0;
+				}
+				cycleSlides();
+			}, 5000);
+		
+		$('.next').on('click', function(){
+			clearInterval(autoSlide);
+			currentIndex += 1;
+			  if (currentIndex > itemsAmt - 1) {
+				  		currentIndex = 0;
+				  	}
+				cycleSlides();
+		});
+
+		$('.prev').on('click', function(){
+			clearInterval(autoSlide);
+			currentIndex -= 1;
+			  if (currentIndex < 0) {
+				  		currentIndex = itemsAmt -1;
+				  	}
+				cycleSlides();
+		});
+
+
+
+	});
 
 	</script>
 </body>

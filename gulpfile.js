@@ -14,7 +14,8 @@ var gulp = require('gulp'),
 // make app.js
 
 gulp.task("concatScripts", function(){
-	return gulp.src(['js/main.js',     // return - for tasks that depend on this task
+	return gulp.src(['js/aslider.js',
+		'js/main.js',     // return - for tasks that depend on this task
 		'js/anotherfile.js'])
 		.pipe(maps.init())  
 		.pipe(concat("app.js")) 
