@@ -27,6 +27,7 @@ footer, nav li{
 .banner {
 		background-color: $grey-black;
 		color: white;
+
 }
 
 .col{
@@ -41,13 +42,16 @@ footer, nav li{
 }
 
 html {
-	/*background color*/
+	background-color: #eee;
 }
 
 body{
 	/*font stack:*/
 	font: 1em 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 	font-weight: normal;
+	
+	background-color: white;
+
 }
 
 html, body, .page-wrap {    /* .side */
@@ -66,11 +70,13 @@ html, body, .page-wrap {    /* .side */
 header{
 /*	padding: 0 15px;*/
 	width: 100%;
+	
 }
 
 .top-logo {
 	margin-top: 0; 
 	margin-bottom: 0;
+	text-align: center;
 	
 	img {
 		width: 200px;
@@ -321,15 +327,15 @@ footer {
 	================================ */
 
 	body{
-	
+		width: 90%;
 		margin: 0 auto;
 		
 	}
 
 	header {
 		display: table;
-		min-height: 125px;
-		padding: initial;
+		/*min-height: 125px;*/
+		padding: 0px;
 		background-color: #fff;
 		.top-logo, nav, nav li {
 			display: inline-block;
@@ -339,9 +345,10 @@ footer {
 
 	.top-logo img{
 		margin-right: 30px;
-		width: 225px;
+		/*width: 150px;*/
 		margin-top: 0px;
 		margin-bottom: 0px;
+
 	}
 
 	nav li {
@@ -351,7 +358,7 @@ footer {
 	}
 
 	.top-logo a, nav a {
-		padding: 10px 20px;
+		/*padding: 10px 20px;*/
 		text-align: center;
 		display: block;
 
@@ -360,6 +367,7 @@ footer {
 		.top-logo, nav {
 			display: table-cell;
 			vertical-align: middle;
+			text-align: center;
 		}
 	}
 
@@ -368,7 +376,7 @@ footer {
 	}
 
 	.banner {
-		border-top: 2px solid $dark-red;
+		border-top: 2px solid $mustard-yellow;
 		/*border-bottom: 2px solid white;*/
 	}
 

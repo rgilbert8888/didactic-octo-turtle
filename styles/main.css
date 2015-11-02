@@ -401,12 +401,13 @@ footer, nav li {
   box-sizing: border-box; }
 
 html {
-  /*background color*/ }
+  background-color: #eee; }
 
 body {
   /*font stack:*/
   font: 1em 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  background-color: white; }
 
 html, body, .page-wrap {
   /* .side */
@@ -425,7 +426,8 @@ header {
 
 .top-logo {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-align: center; }
   .top-logo img {
     width: 200px; }
 
@@ -608,34 +610,36 @@ footer {
   /* Header, Banner and Footer Layout
 	================================ */
   body {
+    width: 90%;
     margin: 0 auto; }
   header {
     display: table;
-    min-height: 125px;
-    padding: initial;
+    /*min-height: 125px;*/
+    padding: 0px;
     background-color: #fff; }
     header .top-logo, header nav, header nav li {
       display: inline-block;
       /*border-radius: 5px;*/ }
     header .top-logo img {
       margin-right: 30px;
-      width: 225px;
+      /*width: 150px;*/
       margin-top: 0px;
       margin-bottom: 0px; }
     header nav li {
       margin-right: 10px;
       white-space: nowrap; }
     header .top-logo a, header nav a {
-      padding: 10px 20px;
+      /*padding: 10px 20px;*/
       text-align: center;
       display: block; }
     header .top-logo, header nav {
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-align: center; }
   .mobile-menu {
     display: none; }
   .banner {
-    border-top: 2px solid #930700;
+    border-top: 2px solid #EDBC00;
     /*border-bottom: 2px solid white;*/ }
   footer {
     text-align: left;

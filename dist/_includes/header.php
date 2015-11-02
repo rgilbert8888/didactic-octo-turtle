@@ -9,7 +9,7 @@
 <!-- if going with floating layout, add group class to header -->
 	<header>
 		<div class="top-logo">
-			<a href="index.php"><img src="images/phoenix_logo.jpeg" alt="pxlogo" /></a>
+			<a href="index.php"><img src="images/phoenix_logo.gif" alt="pxlogo" /></a>
 		</div>	
 		<div class="mobile-menu"><i class="fa fa-bars is-mobile"></i></div>	
 		<nav>

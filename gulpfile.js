@@ -56,7 +56,7 @@ gulp.task("watchSass", function(){
 
 gulp.task("build",['minifyScripts', 'compileSass'], function(){
 	return gulp.src(["styles/main.css", "js/app.min.js", "index.php", 
-					"images/**", "_includes/**", "equipment.json"], { base: './' })          // base preserves directory structure
+					"images/**", "images_updated/**", "_includes/**", "equipment.json"], { base: './' })          // base preserves directory structure
 			.pipe(gulp.dest('dist'));
 }); 
 

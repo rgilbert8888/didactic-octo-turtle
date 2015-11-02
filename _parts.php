@@ -28,7 +28,7 @@
 	</div>	
 	<div class="category">
 		<h2>Milling Machine Parts</h2>
-		<img src="http://i01.i.aliimg.com/photo/v0/60108860753_1/milling_machine_special_plastic_energy_chain.jpg_350x350.jpg" class="photo">
+		<img src="http://r3.forconstructionpros.com/files/base/FCP/image/2013/12/16x9/640x360/bomag--35-millingmachine_11282014.jpg" class="photo">
 	</div>	
 	<div class="category">
 		<h2>Skid Steers</h2>
