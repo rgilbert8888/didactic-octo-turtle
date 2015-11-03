@@ -3,24 +3,7 @@
 <!-- <!DOCTYPE html> -->
 <style type="text/css">
 
-.container {
-  /*max-width: 400px;*/
-  min-height: 250px;
-  background-color: black;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-}
-.container div {
-  background-color: white;
-  width: 100%;
-  display: inline-block;
-  display: none;
-}
-.container img {
-  width: 100%;
-   height:auto;
-}
+
 </style>
 
 <div class="banner">
@@ -33,7 +16,7 @@
 	<div class="slideshow main side">
 
 
-		<div class="container">
+		<div class="slide-container">
     		<div style="display: inline-block;">
      			 <img src="images/slideshow/Construction.jpeg"  />
    			 </div>
