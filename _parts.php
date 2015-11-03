@@ -8,8 +8,7 @@
 	<p>We specialize in Quality Undercarriage Components</p>
 	<p></p>
 </div>
-<div class="products">
-
+<div class="products">   
 	<div class="category">
 		<h2>Pavers</h2>
 		<img src="http://www.constructionequipmentguide.com/scripts/asp_resize_edit.asp?id=11738&width=800" class="photo">

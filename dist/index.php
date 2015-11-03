@@ -32,21 +32,21 @@
 			</div>
 		</div>
 		<div class="aside side">
-		<h2>Featured Items</h2>
+	<!-- 	<h2>Featured Items</h2> -->
 			<div class="col">
-				<a href="rollers.html"><img src="images/Rollers/Roller_09.jpg"></a>
+				<a href="rollers.html"><img src="images/Rollers/Roller_09.gif"></a>
 				<h3>Rollers<span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
 			</div>			
 			<div class="col">
-				<a href="idlers.html"><img src="images/Idlers/Idler_03.jpg"></a>
+				<a href="idlers.html"><img src="images/Idlers/Idler_03.gif"></a>
 				<h3>Idlers <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
 			</div>			
 			<div class="col">
-				<a href="loader-tires.html"><img src="images/WheelLoaderTires/loadertire1.jpg"></a>
+				<a href="loader-tires.html"><img src="images/WheelLoaderTires/loadertire1.gif"></a>
 				<h3>Loader Tires <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
 			</div>			
 			<div class="col">
-				<a href="track-shoes.html"><img src="images/TrackShoes/Shoe_07.jpg"></a>
+				<a href="track-shoes.html"><img src="images/TrackShoes/Shoe_07.gif"></a>
 				<h3>Track Shoes <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
 			</div>
 		</div>
