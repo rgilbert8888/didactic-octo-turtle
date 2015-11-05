@@ -19,11 +19,11 @@
 	</div>
 		<div class="category">
 		<h2>Rollers</h2>
-		<img src="images/Rollers/Roller_07.jpg" class="photo">
+		<img src="images/Rollers/Roller_07.gif" class="photo">
 	</div>	
 	<div class="category">
 		<h2>Track Chains</h2>
-		<img src="images/TrackChains/TrackChain_08.jpg" class="photo">
+		<img src="images/TrackChains/TrackChain_08.gif" class="photo">
 	</div>	
 	<div class="category">
 		<h2>Milling Machine Parts</h2>
@@ -34,22 +34,41 @@
 		<img src="https://www.deere.com/en_US/media/images/product/construction/skid_steers/332e/r4c008188_332e_642x462.png" class="photo">
 	</div>	<div class="category">
 		<h2>Rubber Tracks</h2>
-		<img src="images/Rubber Tracks/Track1.jpg" class="photo">
+		<img src="images/Rubber Tracks/Track1.gif" class="photo">
 	</div>	
 
 	<div class="category">
 		<h2>Sprockets</h2>
-		<img src="images/Sprockets/Sprocket_02.jpg" class="photo">
+		<img src="images/Sprockets/Sprocket_02.gif" class="photo">
 	</div>	
-<!-- 	<div class="category">
-		<h2>Track Shoes</h2>
-		<img src="#" class="photo">
-	</div> -->
 	<div class="category">
 		<h2>Grousers</h2>
 		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQau7ItNoZeDf9gj3YWAOmjceTMJzkqg11QTcFQmofp1TAQd5do1A" class="photo">
 	</div>
+	<div class="category">
+		<h2>Milling Machine Parts</h2>
+		<img src="http://r3.forconstructionpros.com/files/base/FCP/image/2013/12/16x9/640x360/bomag--35-millingmachine_11282014.jpg" class="photo">
+	</div>	
+	<div class="category">
+		<h2>Skid Steers</h2>
+		<img src="https://www.deere.com/en_US/media/images/product/construction/skid_steers/332e/r4c008188_332e_642x462.png" class="photo">
+	</div>	<div class="category">
+		<h2>Rubber Tracks</h2>
+		<img src="images/Rubber Tracks/Track1.gif" class="photo">
+	</div>	
 
+	<div class="category">
+		<h2>Sprockets</h2>
+		<img src="images/Sprockets/Sprocket_02.gif" class="photo">
+	</div>	
+	<div class="category">
+		<h2>Grousers</h2>
+		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQau7ItNoZeDf9gj3YWAOmjceTMJzkqg11QTcFQmofp1TAQd5do1A" class="photo">
+	</div>	
+	<div class="category">
+		<h2>Grousers</h2>
+		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQau7ItNoZeDf9gj3YWAOmjceTMJzkqg11QTcFQmofp1TAQd5do1A" class="photo">
+	</div>
 
 </div>
 

@@ -104,6 +104,7 @@ footer {
 	text-align: center;
 	padding: 20px;
 	line-height: 1.3; 
+	font-size: .75em;
 }
   
 
@@ -137,7 +138,9 @@ footer {
 	overflow: hidden;
 	/*background-color: rgba(0,0,0,1);  */
 	line-height: 1.5;
-	margin: 10px 10px 10px 0px;
+	padding: 0%;
+	text-align: justify;
+
 	background-color: #3797c0;
 
 /*	&:after{
@@ -192,7 +195,7 @@ footer {
 	align-items: stretch;
 	-webkit-flex-direction: column;
 	flex-direction: column;
-	margin: 10px 0px;
+
 /*	-webkit-align-items: stretch;   
   	align-items:stretch;*/
 
@@ -241,7 +244,9 @@ footer {
 }
 
 .side {
-	padding: 3%;
+
+	margin-top: 10px;
+
 }
 
 	.banner {                                   
@@ -250,13 +255,7 @@ footer {
 			padding: 35px 15px;
 			display: block;
 		}
-.main {
-	padding: 0%;
 
-	div {
-		margin: 3%;
-	}
-}
 
 /* Imagery Layout
 ================================ */
@@ -301,20 +300,61 @@ footer {
 
 .category {
 	width:  100%;
-	background-color:white;
-	border: 1px solid black;
+	background-color: white;
+/*	border: 1px solid black;*/
 	text-align:  center;
 	padding: 3%;
 	margin: 5px;
+	overflow: auto;
+	height: 275px;
 
 	img{
-		height: 30%;
+		/*width: 20%;*/
+		max-width: 100%;
+		height: 150px;
+		margin-top: 15px;
 	}
 }
 
 
 
+/*
+About us Page*/
+/*==========================*/
 
+.slide-container {
+  /*max-width: 400px;*/
+  min-height: 250px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+
+}
+.slide-container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+    margin: 0 auto;
+    text-align:  center;
+}
+.slide-container img {
+  width: 100%;
+
+height: auto;
+    margin: 0 auto;
+    height: 275px;
+   /* margin-bottom: 20px;*/
+}
+
+
+.text-section {
+	padding: 3%;
+	text-align: justify;
+}
 
 
 
@@ -347,7 +387,7 @@ footer {
 	header {
 		/*display: table;*/
 		/*min-height: 125px;*/
-		padding: 0% 1%;
+		padding: 0%;
 		background-color: #fff;
 
 		.top-logo, nav, nav li {
@@ -419,7 +459,9 @@ footer {
 
 	/* Column Layout
 	================================ */
-
+	.aside {
+			margin: 10px 0px;
+	}
 
 	.side {
 		/*padding: 20px;*/
@@ -431,6 +473,7 @@ footer {
 	.main {
 		width: 60%;
 		border-bottom: none;
+		margin: 10px 10px 10px 0px;
 	}
 	.side:last-child {
 		float: right;
@@ -457,31 +500,17 @@ footer {
 	width: 30%;}
 
 
-}
-
-
-/*
-About us Page*/
-/*==========================*/
-
-.slide-container {
-  /*max-width: 400px;*/
-  min-height: 250px;
-  background-color: black;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  width: 100%;
-}
-.slide-container div {
-  background-color: white;
-  width: 100%;
-  display: inline-block;
-  display: none;
-}
+/*SLIDESHOW*/
 .slide-container img {
   width: 100%;
-   height:auto;
+   height: 450px;
+    margin: 0 auto;
+   /* margin-bottom: 20px;*/
+}
+
+
+
+
 }
 
 

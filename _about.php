@@ -27,27 +27,46 @@
      			<img src="images/slideshow/big_excavator.png"  />
    			 </div>
   		 </div>
-  		<button class="next">Next</button>
-		<button class="prev">Prev</button>
+<!--	<button class="next">Next</button>
+		<button class="prev">Prev</button> -->
   	</div>
-  	<div class="about-us side">
-  		<h2>History</h2>
+  	<div class="about-us side aside">
+  		<h2>Quality</h2>
   		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
   		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
   		Risus sed, sagittis ligula consectetuer curabitur dui donec,
   		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
-  		<h2>Mission</h2>
+  		<h2>Commitment</h2>
   		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
   		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
   		Risus sed, sagittis ligula consectetuer curabitur dui donec,
   		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
-  		<h2>Team</h2>
+  		<h2>Recent Clients</h2>
 	  		<ul>
 	  			<li>John Smith</li>
 	  			<li>Jane Doe</li>
 	  			<li>Homer Simpson</li>
 	  		</ul>
   	</div>
+</div>
+
+<div class="text-section">
+	<h2>Our History</h2>
+	<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
+  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+  	<h2>How We're Different</h2>
+  	<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
+  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+  	<h2>Our Team</h2>
+  		<ul>
+	  		<li>John Smith</li>
+	  		<li>Jane Doe</li>
+	  		<li>Homer Simpson</li>
+	  	</ul>
 </div>
 <?php include('_includes/footer.php') ?>
 
@@ -61,17 +80,18 @@
 			//   }); 
 
 			var currentIndex = 0,
-				items = $('.container div'),
+				items = $('.slide-container div'),
 				itemsAmt = items.length;
 
 			function cycleSlides(){
-				var item = $('.container div').eq(currentIndex);
+				var item = $('.slide-container div').eq(currentIndex);
 				items.hide(); 
 				item.css('display', 'inline-block');
 			}
 
 			var autoSlide = setInterval(function(){
 				currentIndex += 1; 
+
 				if(currentIndex > itemsAmt - 1){
 					currentIndex = 0;
 				}
@@ -79,8 +99,10 @@
 			}, 5000);
 		
 		$('.next').on('click', function(){
+
 			clearInterval(autoSlide);
 			currentIndex += 1;
+			console.log(currentIndex);
 			  if (currentIndex > itemsAmt - 1) {
 				  		currentIndex = 0;
 				  	}
@@ -95,7 +117,6 @@
 				  	}
 				cycleSlides();
 		});
-
 
 
 	});
