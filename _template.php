@@ -4,11 +4,41 @@
 
 
 <div class="banner">
-	<h1>This is the Main Heading!</h1>
-	<p>Stuff and Things</p>
+	<h1>Specials and Events</h1>
+	<p>This is an area for text or photos</p>
 </div>
 <div class="content group">
-	<p>content goes here!</p>
+	<div class="text-section">
+		<!-- <div class="article"> -->
+			<h3>Specials</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>			
+			<h3>Upcoming Events</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>			
+			<h3>Racing Stuff?</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		<!-- </div> -->
+	</div>
 		<!-- <div class="main side"> -->
 <!-- 			<img class="main-img" src="http://www.monroetractor.com/images/mt_placeholder_construction.jpg" />
 			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 

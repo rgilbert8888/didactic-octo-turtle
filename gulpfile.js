@@ -15,6 +15,7 @@ var gulp = require('gulp'),
 
 gulp.task("concatScripts", function(){
 	return gulp.src(['js/aslider.js',
+		'gen_validatorv4.js',
 		'js/main.js',     // return - for tasks that depend on this task
 		'js/anotherfile.js'])
 		.pipe(maps.init())  

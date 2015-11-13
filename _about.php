@@ -2,55 +2,91 @@
 
 <!-- <!DOCTYPE html> -->
 <style type="text/css">
-
-
+/*.test {
+	color: black;
+}*/
 </style>
 
-<div class="banner">
+<div class="">
 	<h1>About Us</h1>
 	<p>More stuff here. explanation of the company. Aliquam erat volutpat. Nam dui mi, tincidunt quis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
 		eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
 		facilisis luctus, metus.</p>
 </div>
-<div class="content group">
-	<div class="slideshow main side">
-
-
+<div class="bg-container group">
+	<div class="slideshow">
 		<div class="slide-container">
     		<div style="display: inline-block;">
-     			 <img src="images/slideshow/Construction.jpeg"  />
+     			 <img src="http://cdn.xl.thumbs.canstockphoto.com/canstock0652463.jpg"  />
    			 </div>
     		<div>
-   				<img src="images/slideshow/big_bulldozer.png" />
+   				<img src="http://cdn.xl.thumbs.canstockphoto.com/canstock0069379.jpg" />
    			</div>
    			<div>
-     			<img src="images/slideshow/big_excavator.png"  />
+     			<img src="http://cdn.xl.thumbs.canstockphoto.com/canstock7272709.jpg"  />
    			 </div>
   		 </div>
 <!--	<button class="next">Next</button>
 		<button class="prev">Prev</button> -->
-  	</div>
-  	<div class="about-us side aside">
-  		<h2>Quality</h2>
-  		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
-  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
-  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
-  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
-  		<h2>Commitment</h2>
-  		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
-  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
-  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
-  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
-  		<h2>Recent Clients</h2>
-	  		<ul>
+	</div>
+<div class="group-of-test">
+	<div class="test">
+		<h2>Thing Thing</h2>
+		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+		  	sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+		  	Risus sed, sagittis ligula consectetuer curabitur dui donec,
+		  	id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+	</div>
+	<div class="test">
+		<h2>Thing Thing</h2>
+		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+		  	sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+		  	Risus sed, sagittis ligula consectetuer curabitur dui donec,
+		  	id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+	</div>
+	<div class="test">
+		<h2>Thing Thing</h2>
+		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+		  	sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+		  	Risus sed, sagittis ligula consectetuer curabitur dui donec,
+		  	id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+	</div>
+	<div class="test">
+		<h2>Thing Thing</h2>
+		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+		  	sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+		  	Risus sed, sagittis ligula consectetuer curabitur dui donec,
+		  	id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+	</div>
+</div>
+	</div>
+  	<!-- <div class="column-holder quality">
+		<div class="column col1">
+  			<h2>Quality</h2>
+  			<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+	  			sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+	  			Risus sed, sagittis ligula consectetuer curabitur dui donec,
+	  			id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+	  		</div>
+	  	<div class="column col2">
+  			<h2>Commitment</h2>
+	  		<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
+	  		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
+	  		Risus sed, sagittis ligula consectetuer curabitur dui donec,
+	  		id orci scelerisque arcu est ullamcorper egestas, aliquam eu.</p>
+	  	</div>
+	  	<div class="column col3">
+  			<h2>Recent Clients</h2>
+	  		<ul style="list-style: bullet">
 	  			<li>John Smith</li>
 	  			<li>Jane Doe</li>
 	  			<li>Homer Simpson</li>
 	  		</ul>
-  	</div>
-</div>
+	  	</div>
+  	</div> --> 
 
-<div class="text-section">
+
+<!-- <div class="column-holder about">
 	<h2>Our History</h2>
 	<p>Lorem libero, risus quis facilisis vestibulum pede ipsum id, 
   		sed odio sodales pellentesque amet duis justo, blandit turpis ligula. 
@@ -68,6 +104,7 @@
 	  		<li>Homer Simpson</li>
 	  	</ul>
 </div>
+ -->
 <?php include('_includes/footer.php') ?>
 
 

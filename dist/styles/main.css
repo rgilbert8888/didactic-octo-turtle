@@ -375,9 +375,6 @@ a {
 /*COLORS*/
 /*COLOR STYLES*/
 /*===========================*/
-.side {
-  background-color: #ddd; }
-
 footer {
   /*	border-top: 3px solid $mustard-yellow;*/ }
 
@@ -401,13 +398,13 @@ footer, nav li {
   box-sizing: border-box; }
 
 html {
-  background-color: #fff; }
+  background-color: #eee; }
 
 body {
   /*font stack:*/
   font: 1em 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   font-weight: normal;
-  background-color: #eee; }
+  background-color: #FFF; }
 
 html, body, .page-wrap {
   /* .side */
@@ -447,8 +444,8 @@ nav li {
 footer {
   text-align: center;
   padding: 20px;
-  line-height: 1.3;
-  font-size: .75em; }
+  font-size: .75em;
+  border-top: 3px solid #EDBC00; }
 
 .mobile-menu {
   background-color: #930700;
@@ -476,7 +473,6 @@ footer {
   line-height: 1.5;
   padding: 0%;
   text-align: justify;
-  background-color: #3797c0;
   /*	&:after{
 	    content: ' ';
 	    display: block;
@@ -497,21 +493,29 @@ footer {
 	    background-size: cover;   
 	}
 */ }
-  .main .article {
-    /*background-color: rgba(0,0,0,.5);*/
-    padding: 10px;
-    position: relative;
-    z-index: 3;
-    max-width: 100%; }
-    .main .article p {
-      margin-bottom: 15px;
-      line-height: 140%;
-      color: white; }
-    .main .article h3 {
-      color: #EDBC00; }
+  .main .articles {
+    background-color: #ddd;
+    min-height: 100%; }
+    .main .articles .article {
+      /*background-color: rgba(0,0,0,.5);*/
+      padding: 10px;
+      position: relative;
+      z-index: 3;
+      max-width: 100%;
+      color: #353535; }
   .main img {
     position: relative;
     z-index: 3; }
+
+p {
+  margin-bottom: 15px;
+  line-height: 140%; }
+
+footer p {
+  margin-bottom: 0px; }
+
+h3 {
+  color: #930700; }
 
 .aside {
   display: -webkit-flex;
@@ -520,6 +524,8 @@ footer {
   align-items: stretch;
   -webkit-flex-direction: column;
   flex-direction: column;
+  background-color: #ddd;
+  padding: 10px;
   /*	-webkit-align-items: stretch;   
   	align-items:stretch;*/ }
   .aside .col {
