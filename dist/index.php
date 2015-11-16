@@ -1,58 +1,64 @@
 <?php include('_includes/header.php') ?>
 
 <!-- <!DOCTYPE html> -->
+<style type="text/css">
 
+</style>
 
-<div class="banner">
-	<h1>Your Heavy Equipment Parts Supplier!</h1>
-	<p>Short explanation of the company. Aliquam erat volutpat. Nam dui mi, tincidunt quis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-		eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-		facilisis luctus, metus.</p>
-</div>
-<div class="content group">
-		<div class="main side">
-			<img class="main-img" src="images/doosan-wl.png" />
-			<div class="articles">
-				<div class="article">
-					<h3>Sub heading 1</h3>
-					<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-						eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-						facilisis luctus, metus. <a href="#">More</a></p>
-				</div>
-				<div class="article">
-					<h3>Sub heading 2</h3>
-					<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-						eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-						facilisis luctus, metus. <a href="#">More</a></p>
-				</div>			
-				<div class="article">
-					<h3>Sub heading 3</h3>
-					<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-						eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
-						facilisis luctus, metus. <a href="#">More</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="aside side">
-	<!-- 	<h2>Featured Items</h2> -->
-			<div class="col">
-				<a href="rollers.html"><img src="images/Rollers/Roller_09.gif"></a>
-				<h3>Rollers<span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
-			</div>			
-			<div class="col">
-				<a href="idlers.html"><img src="images/Idlers/Idler_03.gif"></a>
-				<h3>Idlers <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
-			</div>			
-			<div class="col">
-				<a href="loader-tires.html"><img src="images/WheelLoaderTires/loadertire1.gif"></a>
-				<h3>Loader Tires <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
-			</div>			
-			<div class="col">
-				<a href="track-shoes.html"><img src="images/TrackShoes/Shoe_07.gif"></a>
-				<h3>Track Shoes <span class="arrow"><i class="fa fa-arrow-right fa-5"></i></span></h3>
+<!-- <div class="header-notes">
+	<div class="header-container">
+		<span class="shipping">Free Shipping Nationwide!</span>
+		<span class="telephone">732-766-2109</span>
+	</div>
+</div> -->
+<div class="photo darken">
+
+	<div class="banner">
+		<div class="content">
+		<h1>Your Heavy Equipment<br />Parts Supplier</h1>
+		<p>Short explanation of the company. Aliquam erat volutpat. Nam dui mi, tincidunt quis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+			eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+			facilisis luctus, metus.</p>
+			<div>		
+				<!-- <a class="show-me" href="_parts.php">Show Me Parts</a> -->
+				<p class="button"><a href="#">We've got parts!</a></p>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="thumb-container">
+	<span class="thumbnail"><img src="http://comps.canstockphoto.com/can-stock-photo_csp6447997.jpg"></span>
+	<span class="thumbnail"><img src="http://comps.canstockphoto.com/can-stock-photo_csp19736024.jpg"></span>
+	<span class="thumbnail"><img src="http://comps.canstockphoto.com/can-stock-photo_csp16661589.jpg"></span>
+	<span class="thumbnail"><img src="http://comps.canstockphoto.com/can-stock-photo_csp5585093.jpg"></span>
+</div>
+
+	<div class="featured-info">
+		<div class="articles">
+			<div class="article">
+				<h3>SOME HEADING 1</h3>
+				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus. </p>
+				<p class="button"><a href="#">More</a></p>
+			</div>
+			<div class="article">
+				<h3>SOME HEADING 2</h3>
+				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus.</p>
+				<p class="button"> <a href="#">More</a></p>
+			</div>			
+			<div class="article">
+				<h3>SOME HEADING 3</h3>
+				<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+					eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, 
+					facilisis luctus, metus. </p>
+				<p class="button"> <a href="#">More</a></p>
+			</div>
+		</div>
+		</div>
 
 <?php include('_includes/footer.php') ?>
 

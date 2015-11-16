@@ -38,6 +38,5 @@
 					<li><a href="_contact.php">Contact</a></li>
 				</ul>
 			</nav>
-
 		</div>
 	</header>

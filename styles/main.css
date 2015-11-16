@@ -239,8 +239,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -426,9 +425,11 @@ p {
   text-align: center;
   display: block;
   padding: 10px 0; }
+  .button a:hover {
+    color: white;
+    transition: .5s all;
+    background-color: #3d3d3d; }
 
-/* Header, Banner and Footer Layout
-================================ */
 header {
   width: 100%;
   background-color: white; }
@@ -443,6 +444,16 @@ header {
   z-index: 100; }
   .top-logo img {
     width: 270px; }
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: #353535; }
+  footer a {
+    color: white; }
+  footer p {
+    margin: 0px; }
 
 .main-navigation {
   background-color: #353535; }
@@ -463,16 +474,6 @@ header {
 
 .top-logo a, nav a {
   display: block; }
-
-footer {
-  text-align: center;
-  color: white;
-  padding: 10px;
-  background-color: #353535; }
-  footer a {
-    color: white; }
-  footer p {
-    margin: 0px; }
 
 .mobile-menu {
   background-color: #353535;
@@ -508,8 +509,7 @@ footer {
   display: table-cell;
   vertical-align: middle;
   padding: 6%;
-  overflow: auto;
-  /*border-bottom: 2px solid white;*/ }
+  overflow: auto; }
 
 .content {
   position: relative; }
@@ -527,74 +527,26 @@ footer {
 @media (min-width: 769px) {
   .thumb-container {
     display: block; } }
+
 .featured-info {
   color: white;
-  width: 100%;
   background-color: #930700; }
   .featured-info .articles {
     overflow: auto;
-    padding: 10px;
+    padding: 0 10px;
     margin: 0 auto;
     max-width: 1024px; }
     .featured-info .articles .article {
       padding: 30px;
       text-align: left; }
-  .featured-info h3 {
-    border-bottom: 1px solid gray; }
+  .featured-info h3, .featured-info h2 {
+    border-bottom: 1px solid white; }
 
-/* Imagery Layout
-================================ */
-/* PRODUCTS PAGE */
-/*===============================*/
-.products {
-  /*width: 80%;*/
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: stretch;
-  align-items: stretch;
-  -webkit-justify-content: center;
-  justify-content: center;
-  /* You can set flex-wrap and flex-direction individually */
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  /* Or do it all in one line with flex flow */
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  /* tweak the where items line up on the row */
-  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-  /*   -webkit-align-content: flex-end;
-     align-content: flex-end;*/
-  overflow: auto;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 3% 10%;
-  /*	background-color: $grey-black;*/
-  border-top: 3px solid #EDBC00; }
-
-.category {
-  width: 100%;
-  background-color: white;
-  /*	border: 1px solid black;*/
-  text-align: center;
-  padding: 3%;
-  margin: 5px;
-  overflow: auto;
-  height: 275px; }
-  .category img {
-    /*width: 20%;*/
-    max-width: 100%;
-    height: 150px;
-    margin-top: 15px; }
-
-/*
-About us Page*/
-/*==========================*/
-.bg-container {
+.about-container {
   max-width: 1024px;
   margin: 0 auto;
-  min-height: 100%; }
+  min-height: 100%;
+  padding: 30px; }
 
 .slide-container {
   max-height: 400px;
@@ -617,24 +569,84 @@ About us Page*/
   height: auto;
   /* margin-bottom: 20px;*/ }
 
-.column-holder .column {
-  width: 100%;
-  text-align: justify;
-  max-width: 1024px; }
-  .column-holder .column p {
-    width: 100%;
-    margin: 0 auto; }
+.sidebar {
+  background-color: #ccc;
+  overflow: auto; }
+  .sidebar p {
+    display: none; }
 
-.padding {
-  padding: 1%; }
+.about {
+  width: 100%;
+  display: table;
+  position: relative;
+  color: white;
+  text-align: center;
+  background-position: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://upload.wikimedia.org/wikipedia/commons/3/33/FEMA_-_40363_-_Construction_crews_work_a_pile_of_dirt_in_Fargo%2C_North_Dakota.jpg); }
 
 @media (min-width: 769px) {
-  /*SLIDESHOW*/
+  .about-us {
+    display: table;
+    width: 100%; }
+    .about-us .article {
+      float: none;
+      width: 100%; }
+  .sidebar {
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: table-cell; }
+    .sidebar .article {
+      float: none; }
   .slideshow {
     background-color: pink;
-    float: right;
     overflow: auto;
     width: 50%; } }
+
+/* PRODUCTS PAGE */
+/*===============================*/
+.products {
+  /*width: 80%;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  /*   -webkit-align-content: flex-end;
+   align-content: flex-end;*/
+  overflow: auto;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 3% 10%;
+  /*	background-color: $grey-black;*/
+  border-top: 3px solid #EDBC00; }
+
+.category {
+  width: 100%;
+  background-color: white;
+  /*	border: 1px solid black;*/
+  text-align: center;
+  padding: 3%;
+  margin: 5px;
+  overflow: auto;
+  height: 275px; }
+  .category img {
+    /*width: 20%;*/
+    max-width: 100%;
+    height: 150px;
+    margin-top: 15px; }
+
 /* Media Queries
      *** USE MIN WIDTH INSTEAD OF MAX FOR MOBILE FIRST
 ================================ */
@@ -642,19 +654,14 @@ About us Page*/
 */
 @media (min-width: 769px) {
   /* Header, Banner and Footer Layout
-  ================================ */
+	================================ */
   body {
     margin: 0 auto; }
-
   header {
     /*display: table;*/
     /*min-height: 125px;*/
     width: 100%;
     background-color: white; }
-    header nav, header nav li {
-      display: inline-block;
-      /*float: right;*/
-      /*border-radius: 5px;*/ }
     header .main-navigation {
       background-color: white;
       width: 100%; }
@@ -662,7 +669,8 @@ About us Page*/
         padding: 12px 20px;
         color: #353535; }
       header .main-navigation li {
-        float: right; }
+        float: right;
+        display: block; }
     header nav li {
       /*	margin-right: 10px;*/
       white-space: nowrap; }
@@ -676,52 +684,44 @@ About us Page*/
       display: table-cell;
       vertical-align: middle;
       text-align: center; }
-
   .header-container {
     max-width: 1024px;
     margin: 0 auto; }
-
   .mobile-menu {
     display: none; }
-
   footer {
     text-align: left;
     padding: 20px; }
-
   /* Column Layout
-  ================================ */
+	================================ */
   /* CLEARFIX */
   /*===============================*/
   .group::after {
     content: " ";
     display: table;
     clear: both; }
-
   .category {
     width: 30%; }
-
   .header-container {
     padding: 0px 1%; }
-
   .content {
     /*display: inline-block;*/
     /*width: 50%;*/
     position: relative;
     min-height: 100%;
     /*  top: 50%;
-      left: 50%;*/
+  left: 50%;*/
     /*  transform: translate(-50%, -50%);*/
     display: table-cell;
     vertical-align: middle; }
-
   .thumbnail {
     float: left;
     width: 25%;
     height: auto; }
-
   .article {
     float: left;
     width: 33.33%; } }
+
 /*.icon {
     background: $mustard-yellow;
     position: absolute;
@@ -754,5 +754,3 @@ About us Page*/
     border: 0;
     }
 }*/
-
-/*# sourceMappingURL=main.css.map */
